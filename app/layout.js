@@ -5,7 +5,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import Footer from './components/Footer'
 
 export const metadata = {
-  title: 'Unik Espace',
+  title: 'Com Unik',
   description: 'Developed by Nasr Souid',
 }
 

@@ -5,9 +5,9 @@ function About() {
   return (
     <div>
       {" "}
-      <section id="about" class="about">
-        <div class="container" data-aos="fade-up">
-          <div class="section-header">
+      <section id="about" className="about">
+        <div className="container" data-aos="fade-up">
+          <div className="section-header">
             <h2>About Us</h2>
             <p>
               Architecto nobis eos vel nam quidem vitae temporibus voluptates
@@ -16,28 +16,28 @@ function About() {
             </p>
           </div>
 
-          <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-lg-5">
-              <div class="about-img">
-                <Image src={about} class="img-fluid" alt="" />
+          <div className="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+            <div className="col-lg-5">
+              <div className="about-img">
+                <Image src={about} className="img-fluid" alt="" />
               </div>
             </div>
 
-            <div class="col-lg-7">
-              <h3 class="pt-0 pt-lg-5">
+            <div className="col-lg-7">
+              <h3 className="pt-0 pt-lg-5">
                 Neque officiis dolore maiores et exercitationem quae est seda
                 lidera pat claero
               </h3>
-              <div class="tab-content">
-                <div class="tab-pane fade show active" id="tab1">
-                  <p class="fst-italic">
+              <div className="tab-content">
+                <div className="tab-pane fade show active" id="tab1">
+                  <p className="fst-italic">
                     Consequuntur inventore voluptates consequatur aut vel et.
                     Eos doloribus expedita. Sapiente atque consequatur minima
                     nihil quae aspernatur quo suscipit voluptatem.
                   </p>
 
-                  <div class="d-flex align-items-center mt-4">
-                    <i class="bi bi-check2"></i>
+                  <div className="d-flex align-items-center mt-4">
+                    <i className="bi bi-check2"></i>
                     <h4>
                       Repudiandae rerum velit modi et officia quasi facilis
                     </h4>
@@ -48,8 +48,8 @@ function About() {
                     magni quaerat nemo et.
                   </p>
 
-                  <div class="d-flex align-items-center mt-4">
-                    <i class="bi bi-check2"></i>
+                  <div className="d-flex align-items-center mt-4">
+                    <i className="bi bi-check2"></i>
                     <h4>Incidunt non veritatis illum ea ut nisi</h4>
                   </div>
                   <p>
@@ -59,8 +59,8 @@ function About() {
                     tempora. Quia et perferendis.
                   </p>
 
-                  <div class="d-flex align-items-center mt-4">
-                    <i class="bi bi-check2"></i>
+                  <div className="d-flex align-items-center mt-4">
+                    <i className="bi bi-check2"></i>
                     <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
                   </div>
                   <p>
