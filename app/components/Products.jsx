@@ -1,26 +1,47 @@
 import React from 'react'
-import service_1 from '../assets/img/services-1.jpg'
-import service_2 from '../assets/img/services-2.jpg'
-import service_3 from '../assets/img/services-3.jpg'
-import service_4 from '../assets/img/services-4.jpg'
-import service_5 from '../assets/img/services-5.jpg'
+import product_1 from '../assets/img/services-1.jpg'
+import product_2 from '../assets/img/services-2.jpg'
+import product_3 from '../assets/img/services-3.jpg'
+import product_4 from '../assets/img/services-4.jpg'
+import product_5 from '../assets/img/services-5.jpg'
 import Image from 'next/image'
-function Services() {
+function Products() {
   return (
-    <section id="services" className="services">
+    <>
+    
+    <section id="products" className="products">
       <div className="container" data-aos="fade-up">
 
         <div className="section-header">
-          <h2>Our Services</h2>
+          <h2>Our products</h2>
           <p>Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut ad dolores adipisci aliquam.</p>
         </div>
 
         <div className="row gy-5">
+        <div className="col-lg-4 product-details">
+              <div className="products-list">
+                <a href="#" className="active">
+                  Storage
+                </a>
+                <a href="#">Logistics</a>
+                <a href="#">Cargo</a>
+                <a href="#">Trucking</a>
+                <a href="#">Packaging</a>
+                <a href="#">Warehousing</a>
+              </div>
 
+              <h4>Enim qui eos rerum in delectus</h4>
+              <p>
+                Nam voluptatem quasi numquam quas fugiat ex temporibus quo est.
+                Quia aut quam quod facere ut non occaecati ut aut. Nesciunt
+                mollitia illum tempore corrupti sed eum reiciendis. Maxime modi
+                rerum.
+              </p>
+            </div>
           <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            <div className="service-item">
+            <div className="product-item">
               <div className="img">
-                <Image src={service_1} className="img-fluid" alt=""/>
+                <Image src={product_1} className="img-fluid" alt=""/>
               </div>
               <div className="details position-relative">
                 <div className="icon">
@@ -35,9 +56,9 @@ function Services() {
           </div>
 
           <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div className="service-item">
+            <div className="product-item">
               <div className="img">
-              <Image src={service_2} className="img-fluid" alt=""/>              </div>
+              <Image src={product_2} className="img-fluid" alt=""/>              </div>
               <div className="details position-relative">
                 <div className="icon">
                   <i className="bi bi-broadcast"></i>
@@ -51,9 +72,9 @@ function Services() {
           </div>
 
           <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div className="service-item">
+            <div className="product-item">
               <div className="img">
-              <Image src={service_3} className="img-fluid" alt=""/>              </div>
+              <Image src={product_3} className="img-fluid" alt=""/>              </div>
               <div className="details position-relative">
                 <div className="icon">
                   <i className="bi bi-easel"></i>
@@ -67,9 +88,9 @@ function Services() {
           </div>
 
           <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
-            <div className="service-item">
+            <div className="product-item">
               <div className="img">
-              <Image src={service_4} className="img-fluid" alt=""/>              </div>
+              <Image src={product_4} className="img-fluid" alt=""/>              </div>
               <div className="details position-relative">
                 <div className="icon">
                   <i className="bi bi-bounding-box-circles"></i>
@@ -84,9 +105,9 @@ function Services() {
           </div>
 
           <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
-            <div className="service-item">
+            <div className="product-item">
               <div className="img">
-              <Image src={service_5} className="img-fluid" alt=""/>              </div>
+              <Image src={product_5} className="img-fluid" alt=""/>              </div>
               <div className="details position-relative">
                 <div className="icon">
                   <i className="bi bi-calendar4-week"></i>
@@ -101,9 +122,9 @@ function Services() {
           </div>
 
           <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
-            <div className="service-item">
+            <div className="product-item">
               <div className="img">
-              <Image src={service_1} className="img-fluid" alt=""/>              </div>
+              <Image src={product_1} className="img-fluid" alt=""/>              </div>
               <div className="details position-relative">
                 <div className="icon">
                   <i className="bi bi-chat-square-text"></i>
@@ -121,7 +142,8 @@ function Services() {
 
       </div>
     </section>
+    </>
   )
 }
 
-export default Services
+export default Products

@@ -43,24 +43,27 @@ const Navbar = () => {
         <nav id="navbar" className="navbar px-9">
           <ul>
             <li>
-              <Link href="/" className="">
+              <Link href="/" className="nav-link scrollto ">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/about">About</Link>
+              <Link className="nav-link scrollto " href="/about">About</Link>
             </li>
             <li>
-              <Link href="/services">Services</Link>
+              <Link className="nav-link scrollto " href="/services">Services</Link>
             </li>
             <li>
-              <Link href="/pricing">Pricing</Link>
+              <Link className="nav-link scrollto " href="/products">Products</Link>
             </li>
             <li>
-              <Link href="/contact">Contact</Link>
+              <Link className="nav-link scrollto " href="/pricing">Pricing</Link>
             </li>
             <li>
-              <Link className="get-a-quote" href="/appointment">
+              <Link className="nav-link scrollto " href="/contact">Contact</Link>
+            </li>
+            <li>
+              <Link  className="nav-link get-a-quote" href="/appointment">
                 Get a Quote
               </Link>
             </li>
@@ -94,62 +97,70 @@ const Navbar = () => {
                 </Link>
                 <div
                   onClick={handleNav}
-                  className="rounded-full shadow-lg shadow-yellow-500 text-yellow-500 p-3 cursor-pointer"
+                  className="rounded-full shadow-lg shadow-[#0ea2bd] text-[#0ea2bd]-500 p-3 cursor-pointer"
                 >
                   <AiOutlineClose />
                 </div>
               </div>
-              <div className="border-b-[2px] border-yellow-500 my-4">
-                <p className="w-[85%] md:w-[90%] py-4 text-yellow-500">
+              <div className="border-b-[2px] border-[#0ea2bd] my-4">
+                <p className="w-[85%] md:w-[90%] py-4 text-[#0ea2bd]">
                   Let&#39;s build something legendary together
                 </p>
               </div>
             </div>
             <div className="py-3 flex flex-col">
-              <ul className="uppercase text-yellow-400">
-                <Link href="/">
+              <ul className="uppercase text-[#0ea2bd]">
+                <Link className="nav-link" href="/">
                   <li
                     onClick={() => setNav(false)}
-                    className="py-2  text-sm text-yellow-400"
+                    className="py-2  text-sm text-[#0ea2bd]"
                   >
                     Home
                   </li>
                 </Link>
-                <Link href="/about">
+                <Link className="nav-link" href="/about">
                   <li
                     onClick={() => setNav(false)}
-                    className="py-2 text-yellow-400 text-sm"
+                    className="py-2 text-[#0ea2bd] text-sm"
                   >
                     About
                   </li>
                 </Link>
-                <Link href="/services">
+                <Link className="nav-link" href="/services">
                   <li
                     onClick={() => setNav(false)}
-                    className="py-2 text-yellow-400 text-sm"
+                    className="py-2 text-[#0ea2bd] text-sm"
                   >
                     Services
                   </li>
                 </Link>
-                <Link href="/pricing">
+                <Link className="nav-link" href="/products">
                   <li
                     onClick={() => setNav(false)}
-                    className="py-2 text-yellow-400 text-sm"
+                    className="py-2 text-[#0ea2bd] text-sm"
+                  >
+                    Products
+                  </li>
+                </Link>
+                <Link className="nav-link" href="/pricing">
+                  <li
+                    onClick={() => setNav(false)}
+                    className="py-2 text-[#0ea2bd] text-sm"
                   >
                     Pricing
                   </li>
                 </Link>
-                <Link href="/contact">
+                <Link className="nav-link" href="/contact">
                   <li
                     onClick={() => setNav(false)}
-                    className="py-2 text-yellow-400 text-sm"
+                    className="py-2 text-[#0ea2bd] text-sm"
                   >
                     Contact
                   </li>
                 </Link>
                 <li>
                   <Link
-                    className="py-2 text-yellow-400 text-sm"
+                    className="py-2 text-[#0ea2bd] text-sm nav-link "
                     href="/appointment"
                   >
                     Get a Quote
@@ -157,16 +168,16 @@ const Navbar = () => {
                 </li>
               </ul>
               <div className="pt-35">
-                <p className="uppercase tracking-widest text-yellow-500">
+                <p className="uppercase tracking-widest text-[#0ea2bd]">
                   Let&#39;s Connect
                 </p>
-                <div className="flex items-center text-yellow-500 justify-between my-2 w-full sm:w-[80%]">
+                <div className="flex items-center text-[#0ea2bd] justify-between my-2 w-full sm:w-[80%]">
                   <a
                     href="https://www.linkedin.com/in/clint-briley-50056920a/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="rounded-full shadow-lg text-yellow-500 shadow-yellow-500 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <div className="rounded-full shadow-lg text-[#0ea2bd] shadow-[#0ea2bd] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                       <FaLinkedinIn />
                     </div>
                   </a>
@@ -175,22 +186,22 @@ const Navbar = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="rounded-full shadow-lg shadow-gray-400 text-yellow-500 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <div className="rounded-full shadow-lg shadow-gray-400 text-[#0ea2bd] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                       <FaGithub />
                     </div>
                   </a>
-                  <Link href="/contact">
+                  <Link className="nav-link" href="/contact">
                     <div
                       onClick={() => setNav(!nav)}
-                      className="rounded-full shadow-lg text-yellow-500 shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                      className="rounded-full shadow-lg text-[#0ea2bd] shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
                     >
                       <AiOutlineMail />
                     </div>
                   </Link>
-                  <Link href="/services">
+                  <Link className="nav-link" href="/services">
                     <div
                       onClick={() => setNav(!nav)}
-                      className="rounded-full shadow-lg text-yellow-500 shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                      className="rounded-full shadow-lg text-[#0ea2bd] shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
                     >
                       <BsFillPersonLinesFill />
                     </div>

@@ -8,7 +8,10 @@ function Features() {
        }
   return (
 <>
-
+<div className="section-header">
+          <h2>Our Services</h2>
+          <p>Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut ad dolores adipisci aliquam.</p>
+        </div>
     <section id="features" className="features">
       <div className="container" data-aos="fade-up">
 

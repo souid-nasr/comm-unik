@@ -114,11 +114,11 @@ function page() {
                   </div>
 
                   <div className="col-md-12 text-center">
-                    <div className="loading">Loading</div>
+                    {/* <div className="loading">Loading</div>
                     <div className="error-message"></div>
                     <div className="sent-message">
                       Your quote request has been sent successfully. Thank you!
-                    </div>
+                    </div> */}
 
                     <button type="submit">Get a quote</button>
                   </div>
