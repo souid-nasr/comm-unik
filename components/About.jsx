@@ -1,81 +1,60 @@
 import React from "react";
-import about from "../assets/img/about.jpg";
+import about_img from "../assets/img/about.jpg";
 import Image from "next/image";
 function About() {
   return (
-    <div>
-      {" "}
-      <section id="about" className="about">
-        <div className="container" data-aos="fade-up">
-          <div className="section-header">
-            <h2>About Us</h2>
-            <p>
-              Architecto nobis eos vel nam quidem vitae temporibus voluptates
-              qui hic deserunt iusto omnis nam voluptas asperiores sequi tenetur
-              dolores incidunt enim voluptatem magnam cumque fuga.
-            </p>
+    <section id="about" className="about pt-0">
+      <div className="container" data-aos="fade-up">
+        <div className="row gy-4">
+          <div className="col-lg-6 position-relative align-self-start order-lg-last order-first">
+            <Image quality={100} src={about_img} alt="/" className="img-fluid" />
           </div>
-
-          <div className="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <div className="col-lg-5">
-              <div className="about-img">
-                <Image src={about} className="img-fluid" alt="" />
-              </div>
+          <div className="col-lg-6 content order-last  order-lg-first">
+            <div className="section-header">
+              <span>SUBLIMER VOTRE INTÉRIEUR </span>
+              <h2>SUBLIMER VOTRE INTÉRIEUR </h2>{" "}
             </div>
-
-            <div className="col-lg-7">
-              <h3 className="pt-0 pt-lg-5">
-                Neque officiis dolore maiores et exercitationem quae est seda
-                lidera pat claero
-              </h3>
-              <div className="tab-content">
-                <div className="tab-pane fade show active" id="tab1">
-                  <p className="fst-italic">
-                    Consequuntur inventore voluptates consequatur aut vel et.
-                    Eos doloribus expedita. Sapiente atque consequatur minima
-                    nihil quae aspernatur quo suscipit voluptatem.
-                  </p>
-
-                  <div className="d-flex align-items-center mt-4">
-                    <i className="bi bi-check2"></i>
-                    <h4>
-                      Repudiandae rerum velit modi et officia quasi facilis
-                    </h4>
-                  </div>
+            <p>
+              … avec Unik Espace qui est spécialiste de l&#39;aménagement
+              d&#39;intérieur sur mesure : dressings, placards, bibliothèques,
+              cuisines depuis 2016 à Tunisie.
+            </p>
+            <ul>
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i className="bi bi-diagram-3"></i>
+                <div>
+                  <h5>UNE LARGE GAMME DE PRODUITS</h5>
                   <p>
-                    Laborum omnis voluptates voluptas qui sit aliquam
-                    blanditiis. Sapiente minima commodi dolorum non eveniet
-                    magni quaerat nemo et.
-                  </p>
-
-                  <div className="d-flex align-items-center mt-4">
-                    <i className="bi bi-check2"></i>
-                    <h4>Incidunt non veritatis illum ea ut nisi</h4>
-                  </div>
-                  <p>
-                    Non quod totam minus repellendus autem sint velit. Rerum
-                    debitis facere soluta tenetur. Iure molestiae assumenda sunt
-                    qui inventore eligendi voluptates nisi at. Dolorem quo
-                    tempora. Quia et perferendis.
-                  </p>
-
-                  <div className="d-flex align-items-center mt-4">
-                    <i className="bi bi-check2"></i>
-                    <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
-                  </div>
-                  <p>
-                    Eius alias aut cupiditate. Dolor voluptates animi ut
-                    blanditiis quos nam. Magnam officia aut ut alias quo
-                    explicabo ullam esse. Sunt magnam et dolorem eaque magnam
-                    odit enim quaerat. Vero error error voluptatem eum.
+                    Avec la sélection rigoureuse de nos fournisseurs nous
+                    pouvons proposer un large choix en termes de styles, de
+                    matières et de finitions qui nous permettrons de répondre au
+                    plus près à vos attentes.
                   </p>
                 </div>
-              </div>
-            </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i className="bi bi-fullscreen-exit"></i>
+                <div>
+                  <h5>DES CONSEILS ADAPTÉS À VOS BESOINS</h5>
+                  <p>
+                    Votre interlocuteur unique, de la conception au suivi de
+                    votre projet, vous conseillera et vous accompagnera tout au
+                    long de sa réalisation.
+                  </p>
+                </div>
+              </li>
+              {/* <li data-aos="fade-up" data-aos-delay="300">
+                <i className="bi bi-broadcast"></i>
+                <div>
+                  <h5>Voluptatem et qui exercitationem</h5>
+                  <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>
+                </div>
+              </li> */}
+            </ul>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }
 

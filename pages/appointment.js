@@ -14,7 +14,7 @@ function page() {
         <div className="container" data-aos="fade-up">
           <div className="row g-0">
             <div className="col-lg-5 quote-bg">
-              <Image src={quote} alt="quote" />
+              <Image quality={100} src={quote} alt="quote" />
             </div>
 
             <div className="col-lg-7">
@@ -114,11 +114,11 @@ function page() {
                   </div>
 
                   <div className="col-md-12 text-center">
-                    {/* <div className="loading">Loading</div>
+                    <div className="loading">Loading</div>
                     <div className="error-message"></div>
                     <div className="sent-message">
                       Your quote request has been sent successfully. Thank you!
-                    </div> */}
+                    </div>
 
                     <button type="submit">Get a quote</button>
                   </div>

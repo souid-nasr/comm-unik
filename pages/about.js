@@ -1,17 +1,21 @@
 import React from "react";
-import About from "@/components/About";
+import Stats from "@/components/Stats";
 import Breadcrumbs from "@/components/Breadcrumbs";
-function page() {
+import About from "@/components/About";
+import Team from "@/components/Team";
+function AboutPage() {
   return (
     <div>
       <Breadcrumbs
-        title="About"
-        subtitle="Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem."
+        title="NOTRE SOCIETE"
+        subtitle="Avec Unik Espace, votre interlocuteur vous accompagne de A à Z dans la réalisation de votre projet : cuisines, dressings, placards, bibliothèques, mobiliers de salon, séparations de pièces et lits relevables.
+        Nous vous proposons la possibilité d&#39;aménager l&#39;ensemble de votre habitat sur-mesure."
       />
       <About/>
- 
+      <Stats />
+      <Team/>
     </div>
   );
 }
 
-export default page;
+export default AboutPage;

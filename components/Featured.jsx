@@ -1,50 +1,42 @@
 import React from 'react'
-
+import { GoTools } from "react-icons/go";
+import Link from 'next/link';
 function Featured() {
   return (
-    <div>
-        <section id="featured-services" className="featured-services">
-      <div className="container">
+    <section id="featured-services" className="featured-services">
+    <div className="container">
 
-        <div className="row gy-4">
+      <div className="row gy-4">
 
-          <div className="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
-            <div className="service-item position-relative">
-              <div className="icon"><i className="bi bi-activity icon"></i></div>
-              <h4><a href="" className="stretched-link">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
+        <div className="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
+          <div className="icon flex-shrink-0"><GoTools className=""></GoTools></div>
+          <div>
+            <h4 className="title">PROPOSITION D&#39;AGENCEMENT ET PROJECTIONS PLAN 3D</h4>
+            <p className="description">PRECONISATIONS ET ETUDE DE VOTRE PROJET VIRTUEL</p>
           </div>
+        </div>
 
-          <div className="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
-            <div className="service-item position-relative">
-              <div className="icon"><i className="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="" className="stretched-link">Sed ut perspici</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
+
+        <div className="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+          <div className="icon flex-shrink-0"><i className="bi bi-truck"></i></div>
+          <div>
+            <h4 className="title">LIVRAISON ET INSTALLATION SUR PLACE</h4>
+            <p className="description">QUALIFICATION D&#39;UN MENUISIER POSEUR</p>
           </div>
+        </div>
 
-          <div className="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
-            <div className="service-item position-relative">
-              <div className="icon"><i className="bi bi-calendar4-week icon"></i></div>
-              <h4><a href="" className="stretched-link">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
+        <div className="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <div className="icon flex-shrink-0"><i className="bi bi-house-check"></i></div>
+          <div>
+            <h4 className="title">RECEPTION DE FIN D&#39;INSTALLATION</h4>
+            <p className="description">RELATION CLIENTS</p>
           </div>
-
-          <div className="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="600">
-            <div className="service-item position-relative">
-              <div className="icon"><i className="bi bi-broadcast icon"></i></div>
-              <h4><a href="" className="stretched-link">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
         </div>
 
       </div>
-    </section>
+
     </div>
+  </section>
   )
 }
 

@@ -18,7 +18,7 @@ function Team() {
         <div className="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200">
           <div className="team-member">
             <div className="member-img">
-              <Image src={team_1} className="img-fluid" alt=""/>
+              <Image quality={100} src={team_1} className="img-fluid" alt=""/>
             </div>
             <div className="member-info">
               <div className="social">
@@ -36,7 +36,7 @@ function Team() {
         <div className="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
           <div className="team-member">
             <div className="member-img">
-            <Image src={team_2} className="img-fluid" alt=""/>            </div>
+            <Image quality={100} src={team_2} className="img-fluid" alt=""/>            </div>
             <div className="member-info">
               <div className="social">
                 <a href=""><i className="bi bi-twitter"></i></a>
@@ -53,7 +53,7 @@ function Team() {
         <div className="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="600">
           <div className="team-member">
             <div className="member-img">
-            <Image src={team_3} className="img-fluid" alt=""/>            </div>
+            <Image quality={100} src={team_3} className="img-fluid" alt=""/>            </div>
             <div className="member-info">
               <div className="social">
                 <a href=""><i className="bi bi-twitter"></i></a>
