@@ -29,7 +29,7 @@ function Breadcrumbs({title,subtitle}) {
       <div className="container">
         <ol>
           <li><Link className="nav-link" href="/">Home</Link></li>
-          <li>{title}</li>
+          <li>{subtitle}</li>
         </ol>
       </div>
     </nav>

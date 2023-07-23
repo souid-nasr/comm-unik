@@ -36,7 +36,7 @@ const Navbar = () => {
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-yellow-500">
         <Link href="/" className="logo d-flex align-items-center">
-          <Image quality={100} src={logo} width="200" height="10" alt="/" />
+          <Image quality={100} src={logo} width="200" height="1" alt="/" />
         </Link>
         <nav id="navbar" className="navbar px-9">
           <ul>

@@ -1,9 +1,33 @@
+"use client"
 import React from "react";
+import { toast } from "react-toastify";
 
 function page() {
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "d36170fc-6c52-4d86-9c68-75e227d09632");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: json
+    });
+    const result = await response.json();
+    if (result.success) {
+      alert('Toast is good')    }
+}
+const onClick = () => toast('Toast is good', { hideProgressBar: true, autoClose: 2000, type: 'success' })
+
   return (
     <>
-
       <section id="contact" className="contact">
         <div className="container" data-aos="fade-up">
           <div>
@@ -42,12 +66,7 @@ function page() {
             </div>
 
             <div className="col-lg-8">
-              <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
-                className="php-email-form"
-              >
+              <form onSubmit={handleSubmit} className="php-email-form">
                 <div className="row">
                   <div className="col-md-6 form-group">
                     <input
@@ -55,7 +74,7 @@ function page() {
                       name="name"
                       className="form-control"
                       id="name"
-                      placeholder="Your Name"
+                      placeholder="Votre Nom"
                       required
                     />
                   </div>
@@ -65,7 +84,7 @@ function page() {
                       className="form-control"
                       name="email"
                       id="email"
-                      placeholder="Your Email"
+                      placeholder="Votre Email"
                       required
                     />
                   </div>
@@ -76,7 +95,7 @@ function page() {
                     className="form-control"
                     name="subject"
                     id="subject"
-                    placeholder="Subject"
+                    placeholder="Objet"
                     required
                   />
                 </div>
@@ -89,15 +108,15 @@ function page() {
                     required
                   ></textarea>
                 </div>
-                <div className="my-3">
+                {/* <div className="my-3">
                   <div className="loading">Loading</div>
                   <div className="error-message"></div>
                   <div className="sent-message">
                     Your message has been sent. Thank you!
                   </div>
-                </div>
+                </div> */}
                 <div className="text-center">
-                  <button type="submit">Send Message</button>
+                  <button type="submit" onClick={onClick}>Send Message</button>
                 </div>
               </form>
             </div>

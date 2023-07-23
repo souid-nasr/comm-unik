@@ -25,20 +25,17 @@ const Slider = () => {
       <SwiperSlide>
         <section
           id="hero"
-          className="hero bg-[url('../assets/img/cuisine/c2horiz.jpg')]"
+          className="hero bg-[url('../assets/img/impression-grands-formats/c2horiz.jpg')]"
         >
           <div className="text-white uppercase bg-black/50 ">
             <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center ">
               <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-2">
-                Cuisines{" "}
+                Impression grands formats{" "}
               </h1>
               <div className="flex justify-center items-center"></div>
-              <p className="md:text-2xl text-xl font-bold text-white">
-                Sublimez votre intérieur afin qu&#39;il vous ressemble ! !
-              </p>
-              <Link href="/portfolio/cuisines">
+              <Link href="/portfolio/impression-grands-formats">
                 <button className="uppercase cta-btn">
-                  voir toutes les cuisines{" "}
+                  voir toutes les impressions grands formats{" "}
                 </button>
               </Link>
             </div>
@@ -48,20 +45,17 @@ const Slider = () => {
       <SwiperSlide>
         <section
           id="hero"
-          className="hero bg-[url('../assets/img/dressing/dhoriz.jpg')] bg-cover	"
+          className="hero bg-[url('../assets/img/carterie/dhoriz.jpg')] bg-cover	"
         >
           <div className="text-white uppercase bg-black/50 ">
             <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center ">
               <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-2">
-                Dressings{" "}
+              Carterie
               </h1>
               <div className="flex justify-center items-center"></div>
-              <p className="md:text-2xl text-xl font-bold text-white">
-                Sublimez votre intérieur afin qu&#39;il vous ressemble ! !
-              </p>
-              <Link href="/portfolio/dressings">
+              <Link href="/portfolio/carterie">
                 <button className="uppercase  cta-btn">
-                  voir toutes les dressings{" "}
+                voir toutes les Carterie{" "}
                 </button>
               </Link>
             </div>
@@ -71,20 +65,18 @@ const Slider = () => {
       <SwiperSlide>
         <section
           id="hero"
-          className="hero bg-[url('../assets/img/bibliotheque/bibliotheque_1.jpg')] bg-cover	"
+          className="hero bg-[url('../assets/img/support-publicitaire/bibliotheque_1.jpg')] bg-cover	"
         >
           <div className="text-white uppercase bg-black/50 ">
             <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center ">
               <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-2">
-                Bibliothèques{" "}
+              Support Publicitaire {" "}
               </h1>
               <div className="flex justify-center items-center"></div>
-              <p className="md:text-2xl text-xl font-bold text-white">
-                Sublimez votre intérieur afin qu&#39;il vous ressemble ! !
-              </p>
+
               <Link href="/portfolio/bibliotheques">
                 <button className="uppercase  cta-btn">
-                  voir toutes les bibliothèques{" "}
+                  voir tous les supports publicitaires {" "}
                 </button>
               </Link>
             </div>
@@ -94,20 +86,17 @@ const Slider = () => {
       <SwiperSlide>
         <section
           id="hero"
-          className="hero bg-[url('../assets/img/chambre/chambre.jpg')] bg-cover	"
+          className="hero bg-[url('../assets/img/tenues-de-travail/chambre.jpg')] bg-cover	"
         >
           <div className="text-white uppercase bg-black/50 ">
             <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center ">
               <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-2">
-                Chambres d&#39;enfants{" "}
+                Tenue de travail {" "}
               </h1>
               <div className="flex justify-center items-center"></div>
-              <p className="md:text-2xl text-xl font-bold text-white">
-                Sublimez votre intérieur afin qu&#39;il vous ressemble ! !
-              </p>
-              <Link href="/portfolio/chambres">
+              <Link href="/portfolio/tenues-de-travail">
                 <button className="uppercase  cta-btn">
-                  voir toutes les Chambres d&#39;enfants{" "}
+                  voir toutes les tenues de travail{" "}
                 </button>
               </Link>
             </div>
@@ -117,20 +106,17 @@ const Slider = () => {
       <SwiperSlide>
         <section
           id="hero"
-          className="hero bg-[url('../assets/img/habillage/habillage.jpg')] bg-cover	"
+          className="hero bg-[url('../assets/img/objets/habillage.jpg')] bg-cover	"
         >
           <div className="text-white uppercase bg-black/50 ">
             <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center ">
               <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-2">
-                Habillages{" "}
+                Objets {" "}
               </h1>
               <div className="flex justify-center items-center"></div>
-              <p className="md:text-2xl text-xl font-bold text-white">
-                Sublimez votre intérieur afin qu&#39;il vous ressemble ! !
-              </p>
-              <Link href="/portfolio/habillages">
+              <Link href="/portfolio/objets">
                 <button className="uppercase  cta-btn">
-                  voir toutes les Habillages{" "}
+                  voir tous les objets{" "}
                 </button>
               </Link>
             </div>
@@ -140,20 +126,17 @@ const Slider = () => {
       <SwiperSlide>
         <section
           id="hero"
-          className="hero bg-[url('../assets/img/porte/porte.jpg')] bg-cover	"
+          className="hero bg-[url('../assets/img/papiers-peints/porte.jpg')] bg-cover	"
         >
           <div className="text-white uppercase bg-black/50 ">
             <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center ">
               <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-2">
-                Portes{" "}
+              Papiers peints & tableaux{" "}
               </h1>
               <div className="flex justify-center items-center"></div>
-              <p className="md:text-2xl text-xl font-bold text-white">
-                Sublimez votre intérieur afin qu&#39;il vous ressemble ! !
-              </p>
-              <Link href="/portfolio/portes">
+              <Link href="/portfolio/papiers-peints">
                 <button className="uppercase  cta-btn">
-                  voir toutes les Portes{" "}
+                  voir tous les tableaux & papiers peints{" "}
                 </button>
               </Link>
             </div>
@@ -163,20 +146,17 @@ const Slider = () => {
       <SwiperSlide>
         <section
           id="hero"
-          className="hero bg-[url('../assets/img/separation/separation.jpg')] bg-cover	"
+          className="hero bg-[url('../assets/img/enseignes/separation_1.jpg')] bg-cover	"
         >
           <div className="text-white uppercase bg-black/50 ">
             <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center ">
               <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-2">
-                Separations{" "}
+                enseignes en lettres boîtiers{" "}
               </h1>
               <div className="flex justify-center items-center"></div>
-              <p className="md:text-2xl text-xl font-bold text-white">
-                Sublimez votre intérieur afin qu&#39;il vous ressemble ! !
-              </p>
-              <Link href="/portfolio/separations">
+              <Link href="/portfolio/enseignes-lettres-boitiers">
                 <button className="uppercase  cta-btn">
-                  voir toutes les Separations{" "}
+                  voir toutes les  enseignes en lettres boîtiers{" "}
                 </button>
               </Link>
             </div>
@@ -186,26 +166,70 @@ const Slider = () => {
       <SwiperSlide>
         <section
           id="hero"
-          className="hero bg-[url('../assets/img/sousescalier/sousescalier.jpg')] bg-cover	"
+          className="hero bg-[url('../assets/img/enseignes/separation_1.jpg')] bg-cover	"
         >
           <div className="text-white uppercase bg-black/50 ">
             <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center ">
               <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-2">
-                Sous escaliers{" "}
+                enseignes LUMINEUSES{" "}
               </h1>
               <div className="flex justify-center items-center"></div>
-              <p className="md:text-2xl text-xl font-bold text-white">
-                Sublimez votre intérieur afin qu&#39;il vous ressemble ! !
-              </p>
-              <Link href="/portfolio/sousescaliers">
+              <Link href="/portfolio/enseignes-lumineuses">
                 <button className="uppercase  cta-btn">
-                  voir toutes les Sous escaliers{" "}
+                  voir toutes les  enseignes LUMINEUSES{" "}
                 </button>
               </Link>
             </div>
           </div>
         </section>{" "}
       </SwiperSlide>
+      <SwiperSlide>
+        <section
+          id="hero"
+          className="hero bg-[url('../assets/img/habillage/sousescalier.jpg')] bg-cover	"
+        >
+          <div className="text-white uppercase bg-black/50 ">
+            <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center ">
+              <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-2">
+                Habillages facades {" "}
+              </h1>
+              <div className="flex justify-center items-center"></div>
+              <Link href="/portfolio/habillage-facade">
+                <button className="uppercase  cta-btn">
+                  voir toutes les Habillages facades{" "}
+                </button>
+              </Link>
+            </div>
+          </div>
+        </section>{" "}
+      </SwiperSlide>
+
+
+
+      <SwiperSlide>
+        <section
+          id="hero"
+          className="hero bg-[url('../assets/img/habillage/sousescalier.jpg')] bg-cover	"
+        >
+          <div className="text-white uppercase bg-black/50 ">
+            <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center ">
+              <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-2">
+                Amenagements professionnels{" "}
+              </h1>
+              <div className="flex justify-center items-center"></div>
+              <p className="md:text-2xl text-xl font-bold text-white">
+                Sublimez votre intérieur afin qu&#39;il vous ressemble ! !
+              </p>
+              <Link href="/portfolio/amenagement-pro">
+                <button className="uppercase  cta-btn">
+                  voir tous les Amenagements professionnels{" "}
+                </button>
+              </Link>
+            </div>
+          </div>
+        </section>{" "}
+      </SwiperSlide>
+      
     </Swiper>
   );
 };

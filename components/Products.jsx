@@ -1,66 +1,79 @@
 import React from "react";
-import cuisine from "../assets/img/cuisine/c1.jpg";
-import dressings from "../assets/img/dressing/d1.jpg";
-import bibliotheques from "../assets/img/bibliotheque/bibliotheque_1.jpg";
-import chambres from "../assets/img/chambre/chambre.jpg";
-import habillages from "../assets/img/habillage/habillage.jpg";
-import portes from "../assets/img/porte/porte.jpg";
-import separations from "../assets/img/separation/separation.jpg";
-import sousescaliers from "../assets/img/sousescalier/sousescalier.jpg";
+import impression_grands_formats from "../assets/img/impression-grands-formats/c1.jpg";
+import carterie from "../assets/img/carterie/d1.jpg";
+import support_publicitaire from "../assets/img/support-publicitaire/bibliotheque_1.jpg";
+import tenues_de_travail from "../assets/img/tenues-de-travail/chambre.jpg";
+import objets from "../assets/img/objets/habillage.jpg";
+import papiers_peints from "../assets/img/papiers-peints/porte.jpg";
+import enseignes from "../assets/img/enseignes/separation.jpg";
+import habillage from "../assets/img/habillage/sousescalier.jpg";
 import Link from "next/link";
 import Image from "next/image";
-import {IoFingerPrintOutline} from 'react-icons/io5'
+import { IoFingerPrintOutline } from "react-icons/io5";
 
 function Products() {
   const data = [
     {
       _id: "id" + Math.random().toString(16).slice(2),
-      url: cuisine,
-      title: "Cuisines",
-      path: "/portfolio/cuisines",
+      url: impression_grands_formats,
+      title: "Impression grands formats",
+      path: "/portfolio/impression-grands-formats",
     },
     {
       _id: "id" + Math.random().toString(16).slice(2),
-      url: dressings,
-      title: "Dressings",
-      path: "/portfolio/dressings",
+      url: carterie,
+      title: "Carterie",
+      path: "/portfolio/carterie",
     },
     {
       _id: "id" + Math.random().toString(16).slice(2),
-      url: bibliotheques,
-      title: "Bibliotheques",
-      path: "/portfolio/bibliotheques",
+      url: support_publicitaire,
+      title: "Supports publicitaires",
+      path: "/portfolio/support-publicitaire",
     },
     {
       _id: "id" + Math.random().toString(16).slice(2),
-      url: chambres,
-      title: "Chambres d’enfants",
-      path: "/portfolio/chambres",
+      url: tenues_de_travail,
+      title: "Tenues de travail",
+      path: "/portfolio/tenues-de-travail",
     },
     {
       _id: "id" + Math.random().toString(16).slice(2),
-      url: habillages,
-      title: "Habillages",
-      path: "/portfolio/habillages",
+      url: objets,
+      title: "Objets",
+      path: "/portfolio/objets",
     },
     {
       _id: "id" + Math.random().toString(16).slice(2),
-      url: portes,
-      title: "Portes",
-      path: "/portfolio/portes",
+      url: papiers_peints,
+      title: "Papiers peints & tableaux",
+      path: "/portfolio/papiers-peints",
     },
     {
       _id: "id" + Math.random().toString(16).slice(2),
-      url: separations,
-      title: "Separations",
-      path: "/portfolio/separations",
+      url: enseignes,
+      title: "Enseignes en lettres boîtiers",
+      path: "/portfolio/enseignes-lettres-boitiers",
     },
     {
       _id: "id" + Math.random().toString(16).slice(2),
-      url: sousescaliers,
-      title: "Sous escaliers",
-      path: "/portfolio/sousescaliers",
+      url: enseignes,
+      title: "Enseignes lumineuses",
+      path: "/portfolio/enseignes-lumineuses",
     },
+    {
+      _id: "id" + Math.random().toString(16).slice(2),
+      url: habillage,
+      title: "Habillage façade",
+      path: "/portfolio/habillage-facade",
+    },
+    {
+      _id: "id" + Math.random().toString(16).slice(2),
+      url: enseignes,
+      title: "Aménagements professionnels",
+      path: "/portfolio/amenagement-pro",
+    },
+
   ];
   return (
     <>
@@ -71,11 +84,10 @@ function Products() {
             <h2>DÉCOUVREZ NOTRE SAVOIR-FAIRE</h2>
 
             <p>
-              Avec Unik Group, votre interlocuteur vous accompagne de A à Z dans
-              la réalisation de votre projet : cuisines, dressings,
-              bibliothèques, habillages, sous escalier, séparations, chambrs
-              d&#39;enfants et portes. Nous vous proposons la possibilité d&#39;aménager
-              l&#39;ensemble de votre habitat sur-mesure.
+              Chez Com Unik chaque client est UNIQUE. Notre
+              équipe s’investit à fond avec vous pour bien comprendre vos
+              besoins et déterminer les traits de communication les plus
+              efficaces.
             </p>
           </div>
 
@@ -88,14 +100,18 @@ function Products() {
                   data-aos-delay="200"
                   key={el._id}
                 >
-                  
                   <div className="product-item">
                     <div className="img">
-                      <Image quality={100} src={el.url} className="img-fluid" alt="cuisine" />
+                      <Image
+                        quality={100}
+                        src={el.url}
+                        className="img-fluid"
+                        alt="cuisine"
+                      />
                     </div>
                     <div className="details position-relative">
                       <div className="icon">
-                        <IoFingerPrintOutline/>
+                        <IoFingerPrintOutline />
                       </div>
                       <Link
                         href={el.path}

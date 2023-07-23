@@ -27,7 +27,7 @@
 /* Colors */
 :root {
   --color-default: #0a0d13;
-  --color-yellow: #0d42ff;
+  --color-links-hover: #0d42ff;
   --color-secondary: #0e1d34;
 }
 
@@ -46,13 +46,13 @@
   --color-links-hover: #1ec3e0;
 
   /* Primay colors */
-  --color-yellow: #0ea2bd;
-  --color-yellow-light: #1ec3e0;
-  --color-yellow-dark: #0189a1;
+  --color-links-hover: #0ea2bd;
+  --color-links-hover-light: #1ec3e0;
+  --color-links-hover-dark: #0189a1;
 
-  --color-yellow-rgb: 14, 162, 189;
-  --color-yellow-light-rgb: 30, 195, 224;
-  --color-yellow-dark-rgb: 1, 137, 161;
+  --color-links-hover-rgb: 14, 162, 189;
+  --color-links-hover-light-rgb: 30, 195, 224;
+  --color-links-hover-dark-rgb: 1, 137, 161;
 
   /* Secondary colors */
   --color-secondary: #485664;
@@ -82,8 +82,8 @@
   --color-orange: #fd7e14;
   --color-orange-rgb: 253, 126, 20;
 
-  --color-yellow: #ffc107;
-  --color-yellow-rgb: 255, 193, 7;
+  --color-links-hover: #1ec3e0;
+  --color-links-hover-rgb: 14, 162, 189;
 
   --color-green: #059652;
   --color-green-rgb: 5, 150, 82;
@@ -105,7 +105,7 @@
 }
 
 /*--------------------------------------------------------------
-# 2. Override default Bootstrap variables
+# 2. Override default Bootstrap variables 
 --------------------------------------------------------------*/
 :root {
   --bs-blue: var(--color-blue);
@@ -114,7 +114,7 @@
   --bs-pink: var(--color-pink);
   --bs-red: var(--color-red);
   --bs-orange: var(--color-orange);
-  --bs-yellow: var(--color-yellow);
+  --bs-yellow: var(--color-links-hover);
   --bs-green: var(--color-green);
   --bs-teal: var(--color-teal);
   --bs-cyan: var(--color-cyan);
@@ -138,7 +138,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: var(--color-yellow-rgb);
+  --bs-primary-rgb: var(--color-links-hover-rgb);
   --bs-secondary-rgb: var(--color-secondary-rgb);
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -191,13 +191,13 @@
   color: var(--color-links-hover) !important;
 }
 .color-primary {
-  color: var(--color-yellow) !important;
+  color: var(--color-links-hover) !important;
 }
 .color-primary-light {
-  color: var(--color-yellow-light) !important;
+  color: var(--color-links-hover-light) !important;
 }
 .color-primary-dark {
-  color: var(--color-yellow-dark) !important;
+  color: var(--color-links-hover-dark) !important;
 }
 .color-secondary {
   color: var(--color-secondary) !important;
@@ -227,7 +227,7 @@
   color: var(--color-orange) !important;
 }
 .color-yellow {
-  color: var(--color-yellow) !important;
+  color: var(--color-links-hover) !important;
 }
 .color-green {
   color: var(--color-green) !important;
@@ -253,13 +253,13 @@
   background-color: var(--color-default) !important;
 }
 .bg-primary {
-  background-color: var(--color-yellow) !important;
+  background-color: var(--color-links-hover) !important;
 }
 .bg-primary-light {
-  background-color: var(--color-yellow-light) !important;
+  background-color: var(--color-links-hover-light) !important;
 }
 .bg-primary-dark {
-  background-color: var(--color-yellow-dark) !important;
+  background-color: var(--color-links-hover-dark) !important;
 }
 .bg-secondary {
   background-color: var(--color-secondary) !important;
@@ -289,7 +289,7 @@
   background-color: var(--color-orange) !important;
 }
 .bg-yellow {
-  background-color: var(--color-yellow) !important;
+  background-color: var(--color-links-hover) !important;
 }
 .bg-green {
   background-color: var(--color-green) !important;
@@ -319,7 +319,7 @@ body {
 }
 
 a {
-  color: var(--color-yellow);
+  color: var(--color-links-hover);
   text-decoration: none;
 }
 
@@ -371,7 +371,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--color-yellow);
+  background: var(--color-links-hover);
   left: 0;
   right: 0;
   bottom: 0;
@@ -454,7 +454,7 @@ section {
 }
 
 .breadcrumbs nav ol a {
-  color: var(--color-yellow);
+  color: var(--color-links-hover);
   transition: 0.3s;
 }
 
@@ -482,14 +482,14 @@ section {
 
 .showButton {
   position: fixed;
-  background-color: var(--color-yellow);
+  background-color: var(--color-links-hover);
   border-radius: 50%;
   padding: 0.5rem;
   right: -100px;
   bottom: 50px;
   font-size: 35px;
   color: white;
-  cursor:pointer;
+  cursor: pointer;
   transform: translateX(-150px);
   animation: slideLeft 1s;
 }
@@ -521,7 +521,7 @@ section {
 #preloader:after {
   content: "";
   position: absolute;
-  border: 4px solid var(--color-yellow);
+  border: 4px solid var(--color-links-hover);
   border-radius: 50%;
   animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
@@ -635,7 +635,7 @@ section {
 
   .navbar .get-a-quote,
   .navbar .get-a-quote:focus {
-    background: var(--color-yellow);
+    background: var(--color-links-hover);
     padding: 8px 20px;
     margin-left: 30px;
     border-radius: 4px;
@@ -645,8 +645,8 @@ section {
   .navbar .get-a-quote:hover,
   .navbar .get-a-quote:focus:hover {
     color: #fff;
-    background: #2756ff;
-  }
+    background: none;
+    border: 2px solid #fff;  }
 
   .navbar .dropdown ul {
     display: block;
@@ -683,7 +683,7 @@ section {
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
   .navbar .dropdown ul li:hover > a {
-    color: var(--color-yellow);
+    color: var(--color-primary);
   }
 
   .navbar .dropdown:hover > ul {
@@ -779,7 +779,7 @@ section {
 
   .navbar .get-a-quote,
   .navbar .get-a-quote:focus {
-    background: var(--color-yellow);
+    background: var(--color-links-hover);
     padding: 8px 20px;
     border-radius: 4px;
     margin: 15px;
@@ -870,7 +870,7 @@ section {
 }
 
 .featured-services .service-item:hover .icon {
-  color: var(--color-yellow);
+  color: var(--color-links-hover);
 }
 
 .featured-services .service-item .title {
@@ -903,7 +903,7 @@ section {
 .featured-services .service-item:hover .title,
 .featured-services .service-item:hover .readmore,
 .featured-services .service-item:hover .icon {
-  color: var(--color-yellow);
+  color: var(--color-links-hover);
 }
 
 /*--------------------------------------------------------------
@@ -930,11 +930,17 @@ section {
 .about .content ul i {
   flex-shrink: 0;
   font-size: 48px;
-  color: var(--color-yellow);
+  color: var(--color-links-hover);
   margin-right: 20px;
   line-height: 0;
 }
-
+.about .content ul .icon {
+  flex-shrink: 0;
+  font-size: 48px;
+  color: var(--color-links-hover);
+  margin-right: 20px;
+  line-height: 0;
+}
 .about .content ul h5 {
   font-size: 18px;
   font-weight: 700;
@@ -953,7 +959,7 @@ section {
   width: 94px;
   height: 94px;
   background: radial-gradient(
-    var(--color-yellow) 50%,
+    var(--color-links-hover) 50%,
     rgba(13, 66, 255, 0.4) 52%
   );
   border-radius: 50%;
@@ -1015,7 +1021,7 @@ section {
 }
 
 .about .play-btn:hover:after {
-  border-left: 15px solid var(--color-yellow);
+  border-left: 15px solid var(--color-links-hover);
   transform: scale(20);
 }
 
@@ -1033,18 +1039,18 @@ section {
 /*--------------------------------------------------------------
 # Gallery Section
 --------------------------------------------------------------*/
-#work{
-  margin-top:-50px
+#work {
+  margin-top: -50px;
 }
-.work-list{
+.work-list {
   row-gap: 3rem;
 }
-.work-item{
+.work-item {
   position: relative;
   height: 300px;
   padding-bottom: 20px;
 }
-.work-item::after{
+.work-item::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1055,20 +1061,20 @@ section {
   height: 0;
   transition: var(--transition);
 }
-.work-item:hover::after{
+.work-item:hover::after {
   width: 90%;
   height: 90%;
 }
-.work-item-icon{
+.work-item-icon {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
   opacity: 0;
-  transition: var(--transition)
+  transition: var(--transition);
 }
-.work-item:hover .work-item-icon{
+.work-item:hover .work-item-icon {
   top: 50%;
   opacity: 1;
 }
@@ -1087,7 +1093,7 @@ section {
   display: block;
 } */
 
-.image-box{
+.image-box {
   position: fixed;
   top: 0;
   left: 0;
@@ -1098,11 +1104,11 @@ section {
   display: none;
 }
 
-.show-image-box{
+.show-image-box {
   display: block;
 }
 
-.image-box-content{
+.image-box-content {
   position: absolute;
   left: 28%;
   /* right: 40%; */
@@ -1113,45 +1119,45 @@ section {
   z-index: 25;
   background-color: var(--black-color);
 }
-.image-box-content .image-box-close-btn{
+.image-box-content .image-box-close-btn {
   position: absolute;
   top: 15px;
   right: 15px;
   color: var(--white-color);
 }
-.image-box-close-btn{
+.image-box-close-btn {
   cursor: pointer;
 }
 
-@media screen and (min-width: 576px){
-  .work-item{
+@media screen and (min-width: 576px) {
+  .work-item {
     padding-top: 30px;
   }
-  .image-box-content{
-      left: 50%;
-      right: 0;
-      top: 40%;
-      transform: translate(-50%, -50%);
-      width: 540px;
-      height: 360px;
+  .image-box-content {
+    left: 50%;
+    right: 0;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 540px;
+    height: 360px;
   }
 }
 
-@media screen and (min-width: 678px){
-  .work-list{
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 3rem;
+@media screen and (min-width: 678px) {
+  .work-list {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
   }
 }
 
-@media screen and (min-width: 992px){
-  .work-list{
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 3rem;
+@media screen and (min-width: 992px) {
+  .work-list {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
   }
-  .image-box-content{
-      max-width: 700px;
-      max-height: 440px;
+  .image-box-content {
+    max-width: 700px;
+    max-height: 440px;
   }
 }
 /*--------------------------------------------------------------
@@ -1215,9 +1221,9 @@ section {
 }
 
 .fuctionality .nav-link.active {
-  color: var(--color-yellow);
+  color: var(--color-links-hover);
   background: none;
-  border-bottom: 3px solid var(--color-yellow);
+  border-bottom: 3px solid var(--color-links-hover);
 }
 
 @media (max-width: 575px) {
@@ -1237,7 +1243,7 @@ section {
   font-size: 22px;
   line-height: 0;
   margin-right: 8px;
-  color: var(--color-yellow);
+  color: var(--color-links-hover);
 }
 
 /*--------------------------------------------------------------
@@ -1263,6 +1269,7 @@ section {
 
 .product .product-details .content {
   margin-top: 20px;
+  text-align: justify;
 }
 
 .product .product-details .content h3 {
@@ -1315,7 +1322,7 @@ section {
   margin: 0;
 }
 
-.product .product-details .meta-top ul li+li {
+.product .product-details .meta-top ul li + li {
   padding-left: 20px;
 }
 
@@ -1323,7 +1330,7 @@ section {
   font-size: 16px;
   margin-right: 8px;
   line-height: 0;
-  color: rgba(var(--color-yellow-rgb), 0.8);
+  color: rgba(var(--color-primary), 0.8);
 }
 
 .product .product-details .meta-top a {
@@ -1335,7 +1342,7 @@ section {
 
 .product .product-details .meta-bottom {
   padding-top: 10px;
-  border-top: 1px solid rgba(var(--color-secondary-rgb), 0.15);
+  border-top: 1px solid rgba(var(--color-primary), 0.15);
 }
 
 .product .product-details .meta-bottom i {
@@ -1344,12 +1351,12 @@ section {
 }
 
 .product .product-details .meta-bottom a {
-  color: rgba(var(--color-secondary-rgb), 0.8);
+  color: rgba(var(--color-primary), 0.8);
   transition: 0.3s;
 }
 
 .product .product-details .meta-bottom a:hover {
-  color: var(--color-yellow);
+  color: var(--color-primary);
 }
 
 .product .product-details .meta-bottom .cats {
@@ -1374,7 +1381,7 @@ section {
   display: inline-block;
 }
 
-.product .product-details .meta-bottom .tags li+li::before {
+.product .product-details .meta-bottom .tags li + li::before {
   padding-right: 6px;
   color: var(--color-default);
   content: ",";
@@ -1412,13 +1419,13 @@ section {
 }
 
 .product .post-author .social-links a {
-  color: rgba(var(--color-secondary-rgb), 0.5);
+  color: rgba(var(--color-primary), 0.5);
   margin-right: 5px;
 }
 
 .product .post-author p {
   font-style: italic;
-  color: rgba(var(--color-gray-rgb), 0.8);
+  color: rgba(var(--color-primary), 0.8);
   margin-bottom: 0;
 }
 /*--------------------------------------------------------------
@@ -1437,25 +1444,25 @@ section {
   color: var(--color-secondary);
 }
 
-.product .sidebar .sidebar-item+.sidebar-item {
+.product .sidebar .sidebar-item + .sidebar-item {
   margin-top: 40px;
 }
 
 .product .sidebar .search-form form {
   background: var(--color-white);
-  border: 1px solid rgba(var(--color-secondary-rgb), 0.3);
+  border: 1px solid rgba(var(--color-primary), 0.3);
   padding: 3px 10px;
   position: relative;
 }
 
-.product .sidebar .search-form form input[type=text] {
+.product .sidebar .search-form form input[type="text"] {
   border: 0;
   padding: 4px;
   border-radius: 4px;
   width: calc(100% - 40px);
 }
 
-.product .sidebar .search-form form input[type=text]:focus {
+.product .sidebar .search-form form input[type="text"]:focus {
   outline: none;
 }
 
@@ -1469,7 +1476,7 @@ section {
   font-size: 16px;
   padding: 0 15px;
   margin: -1px;
-  background: var(--color-yellow);
+  background: var(--color-primary);
   color: var(--color-white);
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -1481,7 +1488,7 @@ section {
 }
 
 .product .sidebar .search-form form button:hover {
-  background: rgba(var(--color-yellow-rgb), 0.8);
+  background: rgba(var(--color-primary), 0.8);
 }
 
 .product .sidebar .categories ul {
@@ -1489,7 +1496,7 @@ section {
   padding: 0;
 }
 
-.product .sidebar .categories ul li+li {
+.product .sidebar .categories ul li + li {
   padding-top: 10px;
 }
 
@@ -1512,7 +1519,7 @@ section {
   display: flex;
 }
 
-.product .sidebar .recent-posts .post-item+.post-item {
+.product .sidebar .recent-posts .post-item + .post-item {
   margin-top: 15px;
 }
 
@@ -1532,7 +1539,7 @@ section {
 }
 
 .product .sidebar .recent-posts h4 a:hover {
-  color: var(--color-yellow);
+  color: var(--color-primary);
 }
 
 .product .sidebar .recent-posts time {
@@ -1567,8 +1574,8 @@ section {
 
 .product .sidebar .tags ul a:hover {
   color: var(--color-white);
-  border: 1px solid var(--color-yellow);
-  background: var(--color-yellow);
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary);
 }
 
 .product .sidebar .tags ul a span {
@@ -1611,7 +1618,7 @@ section {
 }
 
 .services .card a:hover {
-  color: var(--color-yellow);
+  color: var(--color-links-hover);
 }
 
 .services .card p {
@@ -1651,10 +1658,12 @@ section {
   color: #fff;
 }
 
- .cta-btn {
+.cta-btn {
+  color: var(--color-white);
+
+  background: rgba(var(--color-primary-dark-rgb), 0.9);
   font-family: var(--font-primary);
   font-weight: 500;
-  font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 40px;
@@ -1662,12 +1671,12 @@ section {
   transition: 0.5s;
   margin: 10px;
   border: 2px solid #fff;
-  color: #fff;
+
 }
 
- .cta-btn:hover {
-  background: var(--color-yellow);
-  border: 2px solid var(--color-yellow);
+.cta-btn:hover {
+  background: var(--color-links-hover);
+  border: none;
 }
 /*--------------------------------------------------------------
 # Team Section
@@ -1692,7 +1701,7 @@ section {
 .team .team-member .social a {
   transition: color 0.3s;
   color: var(--color-white);
-  background: var(--color-yellow);
+  background: var(--color-links-hover);
   margin: 0 5px;
   display: inline-flex;
   align-items: center;
@@ -1710,7 +1719,7 @@ section {
 
 .team .team-member .social a:hover {
   background: var(--color-primary-light);
-  color: var(--color-yellow);
+  color: var(--color-links-hover);
 }
 
 .team .team-member .social i {
@@ -1756,48 +1765,102 @@ section {
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
-.features {
-  padding-top: 80px;
+.features .nav-tabs {
+  border: 0;
 }
 
-.features .features-item + .features-item {
-  margin-top: 100px;
+.features .nav-link {
+  border: 0;
+  padding: 25px 20px;
+  color: var(--color-secondary);
+  box-shadow: 5px 5px 25px rgba(var(--color-secondary-rgb), 0.15);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0s;
+  cursor: pointer;
+  height: 100%;
 }
 
-@media (max-width: 640px) {
-  .features .features-item + .features-item {
-    margin-top: 40px;
-  }
+.features .nav-link i {
+  font-size: 32px;
+  line-height: 0;
 }
 
-.features .features-item h3 {
+.features .nav-link h4 {
+  font-size: 20px;
   font-weight: 600;
-  font-size: 26px;
-  color: #001973;
+  margin: 10px 0 0 0;
+  color: var(--color-secondary);
 }
 
-.features .features-item ul {
+.features .nav-link:hover {
+  color: var(--color-links-hover);
+}
+
+.features .nav-link.active {
+  transition: 0.3s;
+  background: var(--color-secondary)
+    linear-gradient(
+      rgba(var(--color-links-hover-rgb), 0.95),
+      rgba(var(--color-links-hover-rgb), 0.6)
+    );
+  border-color: var(--color-links-hover);
+}
+
+.features .nav-link.active h4 {
+  color: var(--color-white);
+}
+
+.features .nav-link.active i {
+  color: var(--color-white) !important;
+}
+
+.features .tab-content {
+  margin-top: 30px;
+}
+
+.features .tab-pane.active {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.features .tab-pane h3 {
+  font-weight: 600;
+  font-size: 36px;
+  color: var(--color-secondary);
+}
+
+.features .tab-pane ul {
   list-style: none;
   padding: 0;
 }
 
-.features .features-item ul li {
+.features .tab-pane ul li {
   padding-bottom: 10px;
 }
 
-.features .features-item ul li:last-child {
-  padding-bottom: 0;
+.features .tab-pane ul i {
+  font-size: 24px;
+  margin-right: 4px;
+  color: var(--color-links-hover);
 }
 
-.features .features-item ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: var(--color-yellow);
-}
-
-.features .features-item p:last-child {
+.features .tab-pane p:last-child {
   margin-bottom: 0;
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Pricing Section
@@ -1820,7 +1883,7 @@ section {
 
 .pricing h4 {
   font-size: 48px;
-  color: var(--color-yellow);
+  color: var(--color-links-hover);
   font-weight: 400;
   font-family: var(--font-primary);
   margin-bottom: 25px;
@@ -1871,26 +1934,26 @@ section {
   display: inline-block;
   padding: 12px 35px;
   border-radius: 4px;
-  color: var(--color-yellow);
+  color: var(--color-links-hover);
   transition: none;
   font-size: 16px;
   font-weight: 500;
   font-family: var(--font-primary);
   transition: 0.3s;
-  border: 1px solid var(--color-yellow);
+  border: 1px solid var(--color-links-hover);
 }
 
 .pricing .buy-btn:hover {
-  background: var(--color-yellow);
+  background: var(--color-links-hover);
   color: #fff;
 }
 
 .pricing .featured {
-  border-top-color: var(--color-yellow);
+  border-top-color: var(--color-links-hover);
 }
 
 .pricing .featured .buy-btn {
-  background: var(--color-yellow);
+  background: var(--color-links-hover);
   color: #fff;
 }
 
@@ -2053,7 +2116,10 @@ section {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -2061,7 +2127,10 @@ section {
   border: 1px solid #ffc451;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #ffc451;
 }
 
@@ -2084,7 +2153,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -2134,7 +2203,7 @@ section {
 }
 
 .faq .accordion-button:not(.collapsed) {
-  color: var(--color-yellow);
+  color: var(--color-links-hover);
   border-bottom: 0;
   box-shadow: none;
 }
@@ -2144,7 +2213,7 @@ section {
   top: 14px;
   left: 25px;
   font-size: 20px;
-  color: var(--color-yellow);
+  color: var(--color-links-hover);
 }
 
 .faq .accordion-button:after {
@@ -2294,7 +2363,7 @@ section {
   display: block;
   width: 25px;
   height: 3px;
-  background: var(--color-yellow);
+  background: var(--color-links-hover);
   left: 0;
   right: 0;
   bottom: 0;
@@ -2358,7 +2427,7 @@ section {
 }
 
 .team .member .social a:hover {
-  color: var(--color-yellow);
+  color: var(--color-links-hover);
 }
 
 .team .member .social i {
@@ -2386,7 +2455,7 @@ section {
 
 .horizontal-pricing h4 {
   font-size: 48px;
-  color: var(--color-yellow);
+  color: var(--color-links-hover);
   font-weight: 400;
   font-family: var(--font-primary);
   margin-bottom: 25px;
@@ -2439,8 +2508,8 @@ section {
   padding: 12px 40px;
   border-radius: 4px;
   color: #fff;
-  background-color: var(--color-yellow);
-  border: 2px solid var(--color-yellow);
+  background-color: var(--color-links-hover);
+  border: 2px solid var(--color-links-hover);
   transition: none;
   font-size: 16px;
   font-weight: 500;
@@ -2454,7 +2523,7 @@ section {
 }
 
 .horizontal-pricing .featured {
-  background: var(--color-yellow);
+  background: var(--color-links-hover);
 }
 
 .horizontal-pricing .featured h3,
@@ -2468,14 +2537,14 @@ section {
 }
 
 .horizontal-pricing .featured .buy-btn {
-  background: var(--color-yellow);
+  background: var(--color-links-hover);
   color: #fff;
   border-color: #fff;
 }
 
 .horizontal-pricing .featured .buy-btn:hover {
   background: #fff;
-  color: var(--color-yellow);
+  color: var(--color-links-hover);
 }
 
 /*--------------------------------------------------------------
@@ -2569,7 +2638,7 @@ section {
 
 .get-a-quote .php-email-form input:focus,
 .get-a-quote .php-email-form textarea:focus {
-  border-color: var(--color-yellow);
+  border-color: var(--color-links-hover);
 }
 
 .get-a-quote .php-email-form input {
@@ -2581,7 +2650,7 @@ section {
 }
 
 .get-a-quote .php-email-form button[type="submit"] {
-  background: var(--color-yellow);
+  background: var(--color-links-hover);
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -2612,7 +2681,7 @@ section {
 
 .contact .info-item i {
   font-size: 20px;
-  background: var(--color-yellow);
+  background: var(--color-links-hover);
   color: #fff;
   width: 44px;
   height: 44px;
@@ -2705,7 +2774,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: var(--color-yellow);
+  background: var(--color-links-hover);
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -2748,11 +2817,11 @@ section {
 
 .service-details .services-list a.active {
   font-weight: 700;
-  border-color: var(--color-yellow);
+  border-color: var(--color-links-hover);
 }
 
 .service-details .services-list a:hover {
-  border-color: var(--color-yellow);
+  border-color: var(--color-links-hover);
 }
 
 .service-details .services-img {
@@ -2790,7 +2859,7 @@ section {
 .service-details ul i {
   font-size: 20px;
   margin-right: 8px;
-  color: var(--color-yellow);
+  color: var(--color-links-hover);
 }
 /*--------------------------------------------------------------
 # products Section
@@ -2824,7 +2893,7 @@ section {
   margin: 0;
   width: 72px;
   height: 72px;
-  background: var(--color-yellow);
+  background: var(--color-links-hover);
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -2855,16 +2924,16 @@ section {
 }
 
 .products .product-item:hover .details h3 {
-  color: var(--color-yellow);
+  color: var(--color-links-hover);
 }
 
 .products .product-item:hover .details .icon {
   background: var(--color-white);
-  border: 2px solid var(--color-yellow);
+  border: 2px solid var(--color-links-hover);
 }
 
-.products .product-item:hover .details .icon  {
-  color: var(--color-yellow);
+.products .product-item:hover .details .icon {
+  color: var(--color-links-hover);
 }
 
 .products .product-item:hover .img img {
@@ -2885,8 +2954,8 @@ section {
     border-radius: 8px;
     box-shadow: 0px 0 25px rgba(var(--color-black-rgb), 0.1);
   }
-  }
-  
+}
+
 /*--------------------------------------------------------------
 # product Details Section
 --------------------------------------------------------------*/
@@ -2908,11 +2977,11 @@ section {
 
 .product-details .products-list a.active {
   font-weight: 700;
-  border-color: var(--color-yellow);
+  border-color: var(--color-links-hover);
 }
 
 .product-details .products-list a:hover {
-  border-color: var(--color-yellow);
+  border-color: var(--color-links-hover);
 }
 
 .product-details .products-img {
@@ -2950,7 +3019,7 @@ section {
 .product-details ul i {
   font-size: 20px;
   margin-right: 8px;
-  color: var(--color-yellow);
+  color: var(--color-links-hover);
 }
 /*--------------------------------------------------------------
 # Hero Section
@@ -3024,7 +3093,7 @@ section {
 }
 
 .hero form .btn-primary {
-  background-color: var(--color-yellow);
+  background-color: var(--color-links-hover);
   padding: 15px 30px;
 }
 
@@ -3052,7 +3121,7 @@ section {
   display: block;
   width: 20px;
   height: 3px;
-  background: var(--color-yellow);
+  background: var(--color-links-hover);
   left: 0;
   right: 0;
   bottom: 0;
@@ -3284,7 +3353,9 @@ section {
   height: 100%;
 }
 
-.sliderWrap .btnClose, .sliderWrap .btnPrev, .sliderWrap .btnNext  {
+.sliderWrap .btnClose,
+.sliderWrap .btnPrev,
+.sliderWrap .btnNext {
   position: fixed;
   cursor: pointer;
   opacity: 0.6;
@@ -3293,7 +3364,9 @@ section {
   font-size: 2rem;
 }
 
-.btnNext:hover, .btnPrev:hover, .btnClose:hover {
+.btnNext:hover,
+.btnPrev:hover,
+.btnClose:hover {
   opacity: 1;
 }
 
@@ -3320,7 +3393,7 @@ section {
   display: flex;
   top: 0;
   left: 0;
-  right:0;
+  right: 0;
   bottom: 0;
 }
 @media (min-width: 1280px) {

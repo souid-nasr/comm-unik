@@ -1,23 +1,30 @@
 import React from "react";
 import about_img from "../assets/img/about.jpg";
 import Image from "next/image";
+import { LuBrainCog } from "react-icons/lu";
 function About() {
   return (
     <section id="about" className="about pt-0">
       <div className="container" data-aos="fade-up">
         <div className="row gy-4">
           <div className="col-lg-6 position-relative align-self-start order-lg-last order-first">
-            <Image quality={100} src={about_img} alt="/" className="img-fluid" />
+            <Image
+              quality={100}
+              src={about_img}
+              alt="/"
+              className="img-fluid"
+            />
           </div>
           <div className="col-lg-6 content order-last  order-lg-first">
             <div className="section-header">
-              <span>SUBLIMER VOTRE INTÉRIEUR </span>
-              <h2>SUBLIMER VOTRE INTÉRIEUR </h2>{" "}
+              <span>BIENVENUE CHEZ COM UNIK </span>
+              <h2>BIENVENUE CHEZ COM UNIK </h2>{" "}
             </div>
             <p>
-              … avec Unik Espace qui est spécialiste de l&#39;aménagement
-              d&#39;intérieur sur mesure : dressings, placards, bibliothèques,
-              cuisines depuis 2016 à Tunisie.
+              … qui allie communication on-line et communication off-line, Com
+              Unik conjugue l&#39;ensemble des compétences nécessaires afin de
+              vous accompagner dans l&#39;élaboration et la réalisation de votre
+              stratégie globale de communication.
             </p>
             <ul>
               <li data-aos="fade-up" data-aos-delay="100">
@@ -43,13 +50,13 @@ function About() {
                   </p>
                 </div>
               </li>
-              {/* <li data-aos="fade-up" data-aos-delay="300">
-                <i className="bi bi-broadcast"></i>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <LuBrainCog className="icon"></LuBrainCog>
                 <div>
-                  <h5>Voluptatem et qui exercitationem</h5>
-                  <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>
+                  <h5>CRÉATIVIÉ</h5>
+                  <p>Le maître mot d&#39;une communication réussie est la créativité. SKWERE guide son travail au quotidien en fonction de cette valeur tout en respectant nos champs d&#39;expertise et de compétence.</p>
                 </div>
-              </li> */}
+              </li>
             </ul>
           </div>
         </div>
